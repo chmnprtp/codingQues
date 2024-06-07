@@ -1,0 +1,73 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+bool palindrome(string str)
+{
+    int start = 0;
+    int end = str.length() -1;
+    
+    while(start < end)
+    {
+        if(str[start]!= str[end])
+        {
+            return false;
+        }
+        
+        start++;
+        end--;
+    }
+    
+    return true;
+}
+
+int main()
+{
+    string str;
+    cout<<"Enter string";
+    cin>>str;
+    
+    if(palindrome(str))
+    {
+        cout<<"string is palindrome";
+    }
+    else
+    {
+        cout<<"string is not palindrome";
+    }
+}
+
+
+
+
+
+
+
+
+
+   -------------------------------------------------------------------
+
+
+   //In Javascript
+   function palindrome(num)
+{
+    let str = num;
+    let start = 0;
+   // let end = num.length-1;
+   let end = num
+    while(start<end)
+    {
+        if(num[start]!==num[end])
+        {
+            return false;
+        }
+        
+        start++;
+        end--;
+    }
+    
+    return true;
+}
+
+console.log(palindrome("racecar"))
+console.log(palindrome("chaman"))
