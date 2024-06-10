@@ -1,3 +1,45 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+ void reverse(string str)
+ {
+     int temp;
+     int start = 0;
+     int end = str.size()-1;
+     while(start<end)
+     {
+         swap(str[start],str[end]);
+         start++;
+         end--;
+     }
+     cout<<str;
+ }
+
+int main() {
+   
+   
+   string str ;
+   getline(cin,str);
+   //cout<<str;
+   reverse(str);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Online C++ compiler to run C++ program online
 #include<bits/stdc++.h>
 using namespace std;
