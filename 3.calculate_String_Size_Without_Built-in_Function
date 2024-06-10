@@ -1,0 +1,24 @@
+// Calculated size of string without pre-defined function
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void stringSize(string str)
+{
+    int size=0;
+    while(str[size]!='\0')
+    {
+        str[size];
+        size++;
+    }
+    cout<<size;
+}
+
+int main()
+{
+    string str;
+    getline(cin,str);
+    cout<<"Calculatd size ";
+    
+    stringSize(str);
+}
